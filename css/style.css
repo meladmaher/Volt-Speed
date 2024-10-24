@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --font-family-Cairo: "Cairo", sans-serif;
+}
+
+/* ---------|global Rulse|---------  */
+.contaner {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* small */
+@media (min-width:768px) {
+    .contaner {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px) {
+    .contaner {
+        width: 970px;
+        width: 1173px;
+            width: 1024px;
+    }
+}
+/* large */
+@media (min-width: 1200px) {
+    .contaner {
+        width: 1170px;
+    }
+}
+/* ---------|End global Rulse|---------  */
+
+
+body {
+  background-color: ;
+  font-family: var(--font-family-Cairo);
+
+}
+
+
+
+/* ---------| Start Header | ---- */
+/* ----------| Start humberger | ---- */
+header .humberger__open {
+
+  border: 2.8px solid black;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      cursor: pointer;
+      cursor: pointer;
+      position: absolute;
+      right: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+}
+/* --------media ---------- */
+
+@media (max-width: 700px) {
+header .humberger__open {
+  display: flex;
+}
+}
+/* ----------| End humberger | ---- */
+nav {
+  top: 0;
+}
+header .Logo img {
+  width: 130px;
+}
+header nav {
+
+position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 8px rgb(0 0 0 / 3%)
+}
+header ul {
+  display: flex;
+/* justify-content: space-around; */
+align-items: center;
+background-color: white;
+}
+
+header li {
+  list-style: none;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+}
+
+
+header ul .Links {
+  display: flex;
+justify-content: space-around;
+width: 100%;
+align-items: center;
+
+}
+/* @media (max-width: 700px) {
+header ul .Links {
+    display: none;
+  }
+} */
+
+/* -------------- */
+@media (max-width: 700px) {
+  header ul .Links {
+    position: absolute;
+    display: flex;
+    background: #ffffff;
+    width: 83%;
+    height: 100vh;
+    top: 0;
+left: 121%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  transition: 0.3s;
+z-index: 1000;
+  }
+
+}
+
+.blor {
+  background: #020202d1;
+    width: 110%;
+    height: 105vh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+.Links .hed {
+  position: absolute;
+    left: 40px;
+    top: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8d8787;
+    border-radius: 7px;
+    background: #eee;
+    display: none;
+    cursor: pointer;
+}
+.munecards {
+  width: 100%;
+height: 103px;
+position: absolute;
+top: 0;
+box-shadow: -9px -20px 35px #000000a6;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+@media (min-width:700px) {
+  .munecards{
+  display: none;
+  }
+}
+/* ---------------------- */
+header li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+header li a::before {
+  content: '';
+  background:var(--warning);
+  width: 0%;
+  height: 6px;
+  position: absolute;
+  bottom: -4px;
+  transition: 0.2s;
+}
+ header li:hover  a::before , header li a:hover{
+     width: 100%;
+     color: var(--warning);
+
+ }
+
+nav .Logo {
+      margin: 0 35px;
+}
+/* ---------| End Header | ---- */
+.section_1 {
+  margin-top: 60px;
+margin-bottom: 60px;
+}
+
+.background::after {
+content: '';
+ background-image: url(../imge/portfolio-left-dec.jpg);
+ background-repeat: no-repeat;
+ position: absolute;
+ left: 0;
+ top: 60px;
+ width: 262px;
+ height: 80%;
+ z-index: -18;
+}
+
+
+
+.section_1 .contaner {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+.section_1 .contant {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.textAndImge {
+  display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+    height: 75%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+  .textAndImge {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .textAndImge img {
+    width: 251px;
+  }
+}
+
+
+/* -----------| Start Text | ----------  */
+.text {
+  text-align: center;
+
+}
+
+.search {
+  display: flex;
+  width: 492px;
+  height: 59px;
+margin-bottom: 47px;
+    border: 1px solid #d1d1d1;
+}
+
+@media (max-width: 700px) {
+  .search ,.search input{
+        width: 100%;
+  }
+}
+
+.search input {
+  height: 100%;
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 25px;
+      margin: 0 12px;
+      color: #ababab;
+      font-family: var(--font-family-Cairo);
+
+}
+
+.search button {
+  width: 27%;
+  height: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-Cairo);
+  font-weight: bold;
+  font-size: 18px;
+  background: #ffc107;
+}
+.search button:active {
+  background: red;
+}
+
+
+
+.hero__search {
+  display: flex;
+  flex-direction: row-reverse;
+      justify-content: space-evenly;
+        width: 100%;
+}
+@media (max-width: 700px) {
+
+  .hero__search {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.hero__search__phone {
+  width: 243px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 59px;
+}
+
+.hero__search__phone__icon {
+  font-size: 18px;
+color: #ffc107;
+height: 50px;
+width: 50px;
+background: #f5f5f5;
+line-height: 50px;
+text-align: center;
+border-radius: 50%;
+float: left;
+margin-right: 20px;
+}
+
+/* -----------| End Text | ----------  */
