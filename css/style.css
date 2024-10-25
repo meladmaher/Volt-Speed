@@ -54,7 +54,7 @@
     .contaner {
         width: 970px;
         width: 1173px;
-            width: 1024px;
+            width: 1000px;
     }
 }
 /* large */
@@ -73,7 +73,16 @@ body {
 }
 
 
-
+.button {
+    padding: 3px 23px;
+outline: none;
+border: none;
+cursor: pointer;
+font-family: var(--font-family-Cairo);
+font-weight: bold;
+font-size: 18px;
+background: #ffc107;
+}
 /* ---------| Start Header | ---- */
 /* ----------| Start humberger | ---- */
 header .humberger__open {
@@ -102,6 +111,7 @@ header .humberger__open {
 /* ----------| End humberger | ---- */
 nav {
   top: 0;
+      background-color: white;
 }
 header .Logo img {
   width: 130px;
@@ -124,6 +134,12 @@ header li {
       font-weight: bold;
       cursor: pointer;
       position: relative;
+}
+
+@media (max-width: 700px) {
+  header li {
+    margin:20px 0 ;
+  }
 }
 
 
@@ -151,7 +167,7 @@ header ul .Links {
     top: 0;
 left: 121%;
     flex-direction: column;
-    justify-content: space-evenly;
+        justify-content: center;
   transition: 0.3s;
 z-index: 1000;
   }
@@ -368,3 +384,37 @@ margin-right: 20px;
 }
 
 /* -----------| End Text | ----------  */
+/* -- Start section 2 slider 1 -- */
+.section_2 {
+  height: 100vh;
+  width: 100%;
+}
+.section_2 .slider_1 {
+
+width: 100%;
+height: 200px;
+}
+
+.section_2 .slider_1 .Card {
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* width: 187px;
+      height: 200px; */
+    margin: 0 10px;
+background: #eee;
+}
+
+.section_2 .slider_1 .sliderCards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.section_2 .slider_1 .sliderCards img {
+      width: 100%;
+}
+
+/* --End section 2 slider 1 -- */
